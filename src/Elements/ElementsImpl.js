@@ -1,4 +1,6 @@
-function sum(a, b) {
-    return a + b;
-}
-module.exports = sum;
+import {Enum} from 'enumify';
+
+class Color extends Enum {}
+Color.initEnum(['RED', 'GREEN', 'BLUE']);
+
+module.exports = Color;
